@@ -1,0 +1,23 @@
+{
+  "name": "colorglyph-viewer",
+  "version": "0.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "dev": "wrangler dev",
+    "start": "wrangler dev",
+    "build": "node esbuild.js"
+  },
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20240512.0",
+    "esbuild-plugin-polyfill-node": "^0.3.0",
+    "typescript": "^5.4.5",
+    "wrangler": "^3.56.0"
+  },
+  "dependencies": {
+    "@lunapaint/png-codec": "^0.2.0",
+    "colorglyph-sdk": "file:./colorglyph-sdk",
+    "itty-router": "^5.0.17"
+  }
+}
